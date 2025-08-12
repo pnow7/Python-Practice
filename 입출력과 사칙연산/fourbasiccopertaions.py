@@ -3,6 +3,9 @@
 # /: 실수 나눗셈
 # //: 정수 나눗셈
 
+a, b ,c = map(int, input().split())
+print(a + b + c)
+
 a, b = map(int, input().split())
 print(a - b)
 print(a * b)
