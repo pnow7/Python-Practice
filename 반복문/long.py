@@ -17,7 +17,7 @@ count = n // 4
 
 result = ""
 
-for i range(count)
+for i in range(count):
     result += "long "
 
 print(f"{result}int")
@@ -29,6 +29,5 @@ count = n // 4
 
 result = "long " * count
 
-print(f"{result}int"
-)
+print(f"{result}int")
 """
