@@ -16,5 +16,3 @@ for i in range(len(num_list)):
 
 
 print(f"{max_val}\n{order+1}")
-
-
