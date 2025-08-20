@@ -23,6 +23,4 @@ print(min_val, max_val)
 min_val = 20
 max_val = 20
 
-
-
 """
