@@ -36,12 +36,12 @@
 
 import sys
 
-stduentnum = []
+studentnum = []
 
 for i in range(1, 29):
     num = int(sys.stdin.readline())
-    stduentnum.append(num)
+    studentnum.append(num)
 
 for i in range(1, 31):
-    if i not in stduentnum:
+    if i not in studentnum:
         print(i)
