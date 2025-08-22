@@ -1,3 +1,17 @@
+"""
+[입력]
+4
+
+20
+
+[출력]
+long int
+
+long long long long long int
+
+
+"""
+
 n = int(input())
 
 count = n // 4
@@ -30,4 +44,5 @@ count = n // 4
 result = "long " * count
 
 print(f"{result}int")
+
 """

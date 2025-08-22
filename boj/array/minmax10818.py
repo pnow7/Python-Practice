@@ -1,3 +1,13 @@
+"""
+[입력]
+5
+20 10 35 30 7
+
+[출력]
+7 35
+
+"""
+
 import sys
 
 N = int(sys.stdin.readline())
