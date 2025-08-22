@@ -3,7 +3,7 @@ from sklearn.model_selection import train_test_split
 import pickle
 
 # 데이터 파일 경로를 지정
-file_path = 'c:/Users/82108/Desktop/Developer/python/AI모델만들기/archive/WA_Fn-UseC_-Telco-Customer-Churn.csv'
+file_path = 'c:/Users/82108/Desktop/Developer/python/ai-model/WA_Fn-UseC_-Telco-Customer-Churn.csv'
 df = pd.read_csv(file_path)
 
 # --- 데이터 전처리 ---
@@ -14,15 +14,22 @@ df.dropna(inplace=True)
 
 # 2. 이진 인코딩을 적용
 df['gender'] = df['gender'].replace({'Male': 0, 'Female': 1})
-binary_cols = ['Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'PaperlessBilling', 'Churn']
-for col in binary_cols:
-    df[col] = df[col].replace({'Yes': 1, 'No': 0})
 
-# 3. 원-핫 인코딩을 적용
+binary_cols = ['Partner', 'Dependents', 'PhoneService', 'MultipleLines', 'PaperlessBilling', 
+                   'OnlineSecurity', 'OnlineBackup', 'DeviceProtection', 'TechSupport', 
+                   'StreamingTV', 'StreamingMovies']
+
+for col in binary_cols:
+    df[col] = df[col].replace({'Yes': 1, 'No': 0, 'No internet service': 0, 'No phone service': 0})
+
+# 3. Churn 열을 마지막에 이진 인코딩
+df['Churn'] = df['Churn'].replace({'Yes': 1, 'No': 0})
+
+# 4. 원-핫 인코딩을 적용
 categorical_cols = ['InternetService', 'Contract', 'PaymentMethod']
 df = pd.get_dummies(df, columns=categorical_cols, dtype=int)
 
-# 4. 불필요한 customerID 열을 제거
+# 5. 불필요한 customerID 열을 제거
 df = df.drop('customerID', axis=1)
 
 # --- 모델 학습을 위한 데이터 분리 ---

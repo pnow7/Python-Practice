@@ -1,6 +1,6 @@
 import pandas as pd
 
-file_path = 'c:/Users/82108/Desktop/Developer/python/AI모델만들기/archive/WA_Fn-UseC_-Telco-Customer-Churn.csv'
+file_path = 'c:/Users/82108/Desktop/Developer/python/ai-model/WA_Fn-UseC_-Telco-Customer-Churn.csv'
 
 df = pd.read_csv(file_path)
 
