@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
+import pickle
 
 # 데이터 파일 경로를 지정
 file_path = 'c:/Users/82108/Desktop/Developer/python/AI모델만들기/archive/WA_Fn-UseC_-Telco-Customer-Churn.csv'
@@ -39,3 +40,9 @@ print(f"훈련 데이터(X_train)의 크기: {X_train.shape}")
 print(f"테스트 데이터(X_test)의 크기: {X_test.shape}")
 print(f"훈련 데이터(y_train)의 크기: {y_train.shape}")
 print(f"테스트 데이터(y_test)의 크기: {y_test.shape}")
+
+# 분리된 데이터를 파일로 저장
+with open('split_data.pkl', 'wb') as f:
+    pickle.dump((X_train, X_test, y_train, y_test), f)
+
+print("데이터 전처리 및 분리 완료 'split_data.pkl' 파일 생성")
