@@ -17,28 +17,49 @@ UNUCIC
 
 import sys
 
-check = [0] * 27
-count = 2
+word = sys.stdin.readline().strip()
 
-for i in range(1, 27): 
-    check[i] = count
-    
-    if i % 3 == 0:
-        count += 1
+time = 0
 
-check[19] = 7
-check[22] = 8
-check[25] = 9
-check[26] = 9
-print(*check[1:])
+for char in word:
+    if 'A' <= char <= 'C':
+        time += 3  
+    elif 'D' <= char <= 'F':
+        time += 4  
+    elif 'G' <= char <= 'I':
+        time += 5  
+    elif 'J' <= char <= 'L':
+        time += 6
+    elif 'M' <= char <= 'O':
+        time += 7
+    elif 'P' <= char <= 'S':
+        time += 8  
+    elif 'T' <= char <= 'V':
+        time += 9
+    elif 'W' <= char <= 'Z':
+        time += 10 
 
-word = list(sys.stdin.readline().strip())
+print(time)
 
-order = 0
-sum = 0
+"""
+import sys
 
-for items in word:
-    order = ord(items) - 64
-    sum += check[order]
+dial = {
+    'A': 2, 'B': 2, 'C': 2,
+    'D': 3, 'E': 3, 'F': 3,
+    'G': 4, 'H': 4, 'I': 4,
+    'J': 5, 'K': 5, 'L': 5,
+    'M': 6, 'N': 6, 'O': 6,
+    'P': 7, 'Q': 7, 'R': 7, 'S': 7,
+    'T': 8, 'U': 8, 'V': 8,
+    'W': 9, 'X': 9, 'Y': 9, 'Z': 9
+}
 
-print(sum+2)
+word = sys.stdin.readline().strip()
+
+for char in word:
+    time += dial[char] + 1
+
+print(time)
+
+"""
