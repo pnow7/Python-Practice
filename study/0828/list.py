@@ -18,6 +18,17 @@ print(c)
 # 0번재 인덱스 삭제
 c.remove(c[0])
 print(c)
+print('**' * 20)
+
+# append()
+list_append = ['a', 'b']
+list_append.append('cd')
+print(list_append)  # ['a', 'b', 'cd']
+
+# extend()
+list_extend = ['a', 'b']
+list_extend.extend('cd')
+print(list_extend)  # ['a', 'b', 'c', 'd']
 
 # append랑 extend 차이
 # list1 = [1, 2, 3]
