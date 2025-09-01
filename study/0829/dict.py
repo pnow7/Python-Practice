@@ -1,5 +1,6 @@
 # dict 만들기
 lux1 = dict(health=490, mana=334, melee=550, armor=18.72)
+lux1['mana_regen'] = 228
 print(lux1)
 
 x = {'a': 10, 'b': 20, 'c': 30, 'd': 40}
