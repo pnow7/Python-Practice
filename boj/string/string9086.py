@@ -9,7 +9,6 @@ AB
 AE
 OO
 AB
-
 """
 
 import sys

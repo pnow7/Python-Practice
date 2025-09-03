@@ -9,7 +9,6 @@
 
 [출력]
 Yes
-
 """
 
 money = int(input())

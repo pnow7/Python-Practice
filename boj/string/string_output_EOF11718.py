@@ -8,7 +8,6 @@ Online Judge
 Hello
 Baekjoon
 Online Judge
-
 """
 
 import sys

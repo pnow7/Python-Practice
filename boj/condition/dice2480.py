@@ -8,7 +8,6 @@
 1300
 
 12000
-
 """
 
 a, b, c = map(int, input().split())

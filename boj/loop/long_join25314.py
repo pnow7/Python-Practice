@@ -8,8 +8,6 @@
 long int
 
 long long long long long int
-
-
 """
 
 n = int(input())

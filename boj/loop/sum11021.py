@@ -19,7 +19,6 @@ Case #2: 2 + 3 = 5
 Case #3: 3 + 4 = 7
 Case #4: 9 + 8 = 17
 Case #5: 5 + 2 = 7
-
 """
 
 import sys

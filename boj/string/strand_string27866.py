@@ -10,7 +10,6 @@ shiftpsh
 r
 
 p
-
 """
 
 import sys

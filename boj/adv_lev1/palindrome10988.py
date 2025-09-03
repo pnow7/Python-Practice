@@ -8,7 +8,6 @@ baekjoon
 1
 
 0
-
 """
 
 import sys

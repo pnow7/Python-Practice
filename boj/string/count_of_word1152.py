@@ -4,7 +4,6 @@ The Curious Case of Benjamin Button
 
 [출력]
 6
-
 """
 
 import sys

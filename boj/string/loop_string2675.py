@@ -7,7 +7,6 @@
 [출력]
 AAABBBCCC
 /////HHHHHTTTTTPPPPP
-
 """
 
 import sys

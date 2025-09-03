@@ -8,7 +8,6 @@
 1
 
 0
-
 """
 
 leapyear = int(input())
