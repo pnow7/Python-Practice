@@ -12,9 +12,18 @@ print("원본:", original)
 print("얕은 복사:", shallow)
 print("깊은 복사:", deep)
 
+# 원본 수정
 original[0][0] = 99
 
-print("\n---수정후---")
+print("\n---원본 수정 후---")
+print("원본:", original)
+print("얕은 복사:", shallow)
+print("깊은 복사:", deep)
+
+# 깊은 복사본 수정
+deep[0][0] = 999
+
+print("\n---깊은 복사본 수정 후---")
 print("원본:", original)
 print("얕은 복사:", shallow)
 print("깊은 복사:", deep)
