@@ -37,7 +37,6 @@ for _ in range(N):
     is_group_word = True
     alpha_check[ord(word[0]) - ord('a')] = True                     # 첫 번째 문자 먼저 기록
     
-    
     for i in range(1, len(word)):                                   # 두 번째 문자부터 끝까지 반복하면서 검사
         current_char = word[i]
         prev_char = word[i-1]
