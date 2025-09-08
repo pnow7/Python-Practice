@@ -24,7 +24,7 @@ for _ in range(N):
     arr1.append(row)
 
 arr2 = []
-for _ in range(M):
+for _ in range(N):
     col = list(map(int, sys.stdin.readline().split()))
     arr2.append(col)
 
