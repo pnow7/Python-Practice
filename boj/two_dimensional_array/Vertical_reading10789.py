@@ -23,3 +23,15 @@ for j in range(15):
             result_string += word[i][j] 
 
 print(result_string)
+
+
+"""
+import sys
+
+words = [sys.stdin.readline().strip() for _ in range(5)]
+max_len = max(len(word) for word in words)
+
+result = ''.join([words[i][j] for j in range(max_len) for i in range(5) if len(words[i]) > j])
+
+print(result)
+"""
