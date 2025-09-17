@@ -1,3 +1,6 @@
 *.jpg
 
 jupyter/ai/머신러닝/딥러닝/신경망/cat_and_dog_model.keras
+
+# 특정 폴더의 모든 json 무시
+config/*.jsonconfig/*.json
