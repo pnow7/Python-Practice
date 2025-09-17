@@ -13,6 +13,7 @@ alpha_dict = {
     char: ord(char) - 55 for char in string.ascii_uppercase
 }
 
+# 0부터 9까지 알파벳이 포함안된 숫자들 포함시킴
 for i in range(10):
     alpha_dict[str(i)] = i
 
