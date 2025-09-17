@@ -2,5 +2,8 @@
 
 jupyter/ai/머신러닝/딥러닝/신경망/cat_and_dog_model.keras
 
-# 특정 폴더의 모든 json 무시
-config/*.jsonconfig/*.json
+# my_model 안의 모든 하위 폴더 무시
+project/my_model/*/
+
+# my_model 하위 폴더 안의 모든 JSON 파일 무시
+project/my_model/**/*.json
