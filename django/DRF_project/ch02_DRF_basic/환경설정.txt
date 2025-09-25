@@ -1,0 +1,16 @@
+1. 프로젝트 폴더로 이동
+cd ch02_DRF_basic
+
+2. 가상 환경 생성 및 활성화
+python -m venv myvenv20
+
+.\myvenv20\Scripts\activate
+
+3. 패키지 설치
+pip install -r requirements.txt
+
+4. 데이터베이스 마이그레이션
+python manage.py migrate
+
+5. 서버 실행
+python manage.py runserver
