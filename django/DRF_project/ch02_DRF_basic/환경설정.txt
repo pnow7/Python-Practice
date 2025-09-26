@@ -1,3 +1,6 @@
+- requirements.txt 생성 명령어
+pip freeze > requirements.txt
+
 1. 프로젝트 폴더로 이동
 cd ch02_DRF_basic
 
